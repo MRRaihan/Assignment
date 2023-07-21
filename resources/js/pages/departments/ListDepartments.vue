@@ -1,3 +1,23 @@
+<script setup>
+
+const users = [
+    {
+        id: 1,
+        name: 'John'
+
+    },
+
+    {
+        id: 2,
+        name: 'Raihan'
+
+    },
+
+];
+
+</script>
+
+
 <template>
     <div class="content-header">
         <div class="container-fluid">
@@ -17,27 +37,44 @@
 
     <div class="content">
         <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="d-flex justify-content-between mb-2">
+                        <div>
+                            <a href="">
+                                <button class="btn btn-primary"><i class="fa fa-plus-circle mr-1"></i> Add New
+                                    Department</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">SL#</th>
+                                        <th scope="col">Department Name</th>
+                                        <th scope="col">Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>CSE</td>
+                                        <td>
+                                            <a href="">
+                                                <i class="fa fa-edit mr-2"></i>
+                                            </a>
 
-
-            <div class="card">
-                <div class="card-body">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th style="width: 10px">SL#</th>
-                                <th>Department Name</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Raihan</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-
-                    </table>
+                                            <a href="">
+                                                <i class="fa fa-trash text-danger"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
